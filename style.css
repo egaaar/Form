@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* Обнуляющие стили */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Roboto&display=swap');
+
+.page__body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header {
+  margin-bottom: 43px;
+}
+.header__img {
+  width: 100%;
+  height: auto;
+}
+.main {
+  padding: 0px 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 42px;
+}
+.top {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 20px;
+}
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid blue;
+  padding-bottom: 20px;
+}
+.form__textarea {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 42px;
+  width: 100%;
+  height: 100%;
+  background-color: #e4e2e2;
+  padding: 20px;
+  resize: vertical;
+  color: black;
+  margin-bottom: 10px;
+}
+.block, .example {
+  display: flex;
+  align-items: center;
+  padding-left: 27px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.check, .example__check {
+  transform: scale(2);
+}
+.text, .example__text {
+  margin-left: 20px;
+  width: 100%;
+}
+.btn {
+  color: white;
+  margin-left: 20px;
+  padding: 5px 20px;
+  background-color: #7384F3;
+  border-radius: 10px;
+}
+.btn:hover{
+  text-decoration: underline;
+}
+.instruction {
+  width: 50%;
+  background: #7384F3;
+  padding: 20px;
+}
+.title {
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.numbered {
+  padding-left: 22px;
+}
+.list {
+  color: #ffffff;
+}
+.list:first-child, .list:nth-child(2){
+  color: #ff8f8f;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+}
+.frame {
+  width: 50%;
+  height: auto;
+}
+.karate {
+  height: auto;
+  width: 50%;
+}
+.footer {
+  background: #7384F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.contact {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+.telegram {
+  width: 81px;
+  height: 69px;
+}
+@media (max-width:1000px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form, .instruction{
+    width: 100%;
+  }
+  .form{
+    height: 60vh;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width:600px){
+  .bottom {
+    flex-direction: column-reverse;
+  }
+  .frame {
+    width: 100%;
+  }
+  .karate{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact {
+    font-size: 15px;
+  }
+}
+@media (max-width:425px){
+  .title{
+    font-size: 25px;
+  }
+  .list, .form__textarea, .text, .example__text{
+    font-size: 15px;
+    line-height: 21px;
+  }
+}

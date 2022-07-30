@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page__body body">
+    <header class="body__header header">
+        <img src="images/header.png" alt="Шапка" class="header__img">
+    </header>
+    <main class="body__main main">
+        <section class="main__top top">
+            <form action="" class="top__form form">
+                <textarea placeholder="Вставьте форму..." class="form__textarea"></textarea>
+                <div class="form__example example">
+                    <input id="example" class="example__check" type="checkbox">
+                    <label for="example" class="example__text">Пример формы</label>
+                </div>
+                <div class="form__block block">
+                    <input id="block" checked class="block__check check" type="checkbox">
+                    <label for="block" class="block__text text">Текущая дата </label>
+                </div>
+                    
+                <a href="#" class="form__btn btn">Отправить</a>
+            </form>
+            <div class="main__instruction instruction">
+                <h1 class="instruction__title title">Инструкция!!!</h1>
+                <ol class="instruction__numbered numbered">
+                    <li class="numbered__list list">Строгий синтаксис, т.е. никаких лишних пробелов отступов, букв и т.д.</li>
+                    <li class="numbered__list list">Если в названии методички стоит "+", то она не появится в форме. Примеры:[438],[515],[516] и т.д.</li>
+                    <li class="numbered__list list">Если что то не хотите заполнять, оставляете пустую строчку.</li>
+                    <li class="numbered__list list">Записывать можно только в 6 разделах со звездочкой.</li>
+                    <li class="numbered__list list">Если не ставите галочку с текущей датой, то заполняете сами в гугл-форме.</li>
+                    <li class="numbered__list list">Буду ждать ваши отзывы и предложения, как кот вкусняшку)</li>
+                </ol>
+            </div>
+        </section>
+        <section class="main__bottom bottom">
+            <video class="bottom__frame frame" controls src="video/Форма.mp4"></video>
+            <img src="images/karate.png" alt="Карате" class="bottom__karate karate">
+        </section>
+    </main>
+    <footer class="body__footer footer">
+        <p class="footer__contact contact">Контакты: myteam:Egor Kolpikov</p>
+        <a href="https://t.me/egor2662" class="footer__link link">
+            <img src="images/telegram.png" alt="Телеграм" class="link__telegram telegram">
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
