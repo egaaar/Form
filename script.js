@@ -1,8 +1,8 @@
 "use strict";
 
 
-let form = ['entry.433313432=', '&entry.1399459001=', '&entry.648502256=',
-'&entry.779449585=', '&entry.708310721=', '&entry.213406366=', '&entry.1989654872=']
+let form = ['entry.433313432=','&entry.779449585=', '&entry.708310721=',
+ '&entry.213406366=', '&entry.1989654872=']
 let textArea = document.querySelector('textarea');
 let btn = document.querySelector('.btn');
 let check = document.querySelector('.check');
@@ -12,7 +12,7 @@ let date = new Date();
 let now = date.getDate() + '.' + Number(date.getMonth()+Number(1)) + '.' + date.getFullYear();
 text.textContent += now;
 function send(){
-    let link = 'https://docs.google.com/forms/d/e/1FAIpQLSfkYyW4H8QtOMe3JAg_ELRRPKsis1WHp4NXJ2dst3S3FH3ZZQ/viewform?';
+    let link = 'https://docs.google.com/forms/d/e/1FAIpQLSei5N_4DV0FCfkYHExXj99S-J0ATwtBgIBY4MxbckYIL8dZmw/viewform?';
     let arr = [];
     arr.push(textArea.value);
     let str = arr.join('\n');
@@ -33,7 +33,7 @@ function send(){
 }
 example__check.addEventListener('click', function(){
     if(example__check.checked){
-        textArea.value = 'Колпиков Егор Олегович | 112922\nНемежанская Виктория ТЛ5\nИндивидуальные уроки (8 лет и старше)\n[416] Web Start [Ru]\nМодуль\nГруппа\nСсылка';
+        textArea.value = 'Колпиков Егор Олегович | 112922\n[416] Web Start [Ru]\nМодуль\nГруппа\nСсылка';
     }else{
         textArea.value = '';
     }
@@ -43,4 +43,3 @@ btn.addEventListener('mousedown', function(event){
         send();
     }
 })
-
